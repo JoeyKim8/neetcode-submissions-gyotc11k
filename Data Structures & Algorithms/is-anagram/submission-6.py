@@ -1,0 +1,19 @@
+from collections import defaultdict
+from collections import Counter
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False # set initial parameters
+    
+        counter1 = Counter(s)
+        counter2 = Counter(t)
+
+        # if counter1 == counter2:
+        #     return True
+        # else:
+        #     return False
+        # can do this instead-
+        return counter1 == counter2
+        
+
+        
